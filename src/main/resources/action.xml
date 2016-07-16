@@ -1,0 +1,21 @@
+<actions>
+	<constant name="multipart.modifyFileName" value="false"></constant>
+	<constant name="multipart.maxsize" value="0"></constant>
+	<constant name="multipart.saveDir" value="JxQtData/upload"></constant>
+	<constant name="multipart.temp" value="temp"></constant>
+	<constant name="multipart.isDateDirectory" value="true"></constant>
+	<!--match的1代表是第一个*号，如何可以通过action来确定viewName则配置此参数，会自动收集对应的表单对象 -->
+	<action name="*\.query" class="org.web.action.QueryAction"
+		match="{1}" validate_token="true">
+		<result name="success">{1}.jsp</result>
+		<interceptor name="request" class="">
+		</interceptor>
+	</action>
+	<action name="*_*" class="org.web.action.OperateAction" match="{1}">
+		<result name="success">{1}_{2}.jsp</result>
+		<result name="error">{1}_{2}.jsp</result>
+	</action>
+
+	<!-- <include file="action1.xml"></include> -->
+
+</actions>
