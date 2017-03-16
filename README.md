@@ -20,14 +20,16 @@ Autumn是基于Servlet的Action Mapping映射、依赖注入和数据库的ORM�
 
 #Instructions for use
 * Maven
-
-	<dependency>
-	   <groupId>com.github.mastery001</groupId>
-	   <artifactId>Autumn</artifactId>
-	   <version>1.0</version>
-	</dependency>
+```xml
+<dependency>
+	<groupId>com.github.mastery001</groupId>
+	<artifactId>Autumn</artifactId>
+	<version>1.0</version>
+</dependency>
+```
 
 * Download Zip
+
 [Autumn.zip](https://github.com/mastery001/Autumn/archive/master.zip)
 
 
